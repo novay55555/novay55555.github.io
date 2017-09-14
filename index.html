@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello share.js</title>
+</head>
+<body>
+  <section>
+    <h1>There is another title</h1>
+    <div id="share"></div>
+  </section>
+  <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://overtrue.me/share.js/dist/js/share.min.js"></script>
+  <script>
+    $(function(){
+      $('#share').share({
+        url: window.location.href,
+        title: '标题',
+        description: '网页描述',
+        image: "http://aijiang.ga/img/avatar-1505029156458.jpeg",
+      })
+    })
+  </script>
+</body>
+</html>
