@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="This is a description!">
-  <title>Hello share.js</title>
+  <title>Title by server rendering</title>
   <link rel="stylesheet" href="/vendor/sharejs/css/share.min.css">
   <style>
     .image{
@@ -34,6 +34,7 @@
         image: $('.image img')[1].src,
       })
     })
+    setTimeout(function() {document.title = 'Title change by ajax'}, 0);
   </script>
 </body>
 
