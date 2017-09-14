@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is a description!">
   <title>Hello share.js</title>
   <link rel="stylesheet" href="/vendor/sharejs/css/share.min.css">
   <style>
-    .share-title{
-      margin: 0;
-      padding: 0;
-      height: 0;
-      opacity: 0;
+    .image{
+      display: none;
     }
   </style>
 </head>
+
 <body>
   <section>
-    <h1 class="share-title">There is another title</h1>
     <div id="share"></div>
+    <div class="image">
+      <img src="/img/kato.jpg" alt="">
+      <img src="/img/ding~.jpg" alt="">
+    </div>
   </section>
   <script src="/vendor/jquery.min.js"></script>
   <script src="/vendor/sharejs/js/jquery.share.min.js"></script>
   <script>
-    $(function(){
+    $(function () {
       $('#share').share({
         url: window.location.href,
         title: '标题',
         description: '网页描述',
-        image: "/img/kato.jpg",
+        image: $('.image img')[1].src,
       })
     })
   </script>
 </body>
+
 </html>
