@@ -11,15 +11,15 @@
     <h1>There is another title</h1>
     <div id="share"></div>
   </section>
-  <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://overtrue.me/share.js/dist/js/share.min.js"></script>
+  <script src="/vendor/jquery.min.js"></script>
+  <script src="/vendor/jquery.share.min.js"></script>
   <script>
     $(function(){
       $('#share').share({
         url: window.location.href,
         title: '标题',
         description: '网页描述',
-        image: "http://aijiang.ga/img/avatar-1505029156458.jpeg",
+        image: "/img/kato.jpg",
       })
     })
   </script>
