@@ -1,0 +1,17 @@
+{
+  "name": "code-fragment",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "js:dev": "vuepress dev js-fragments",
+    "js:build": "vuepress build js-fragments && node copy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "vuepress": "^1.2.0"
+  }
+}
